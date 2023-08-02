@@ -53,6 +53,7 @@
     <br>
     <hr>
     <br>
+    <h1>Formatting</h1>
     <p>
             <b>hep çektin kendini naza <sub>bold</sub></b>
             <br>
@@ -76,8 +77,52 @@
             <br>
             <em>gelsen de bir gelmesen de <sup>emphasized</sup></em>
 
-            <br><br><br><br>
+            <br><br>
     </p>
-    
+    <br><hr><br>
+
+    <h1>Quotation</h1>
+    <br><br>
+    <h3>block quotation</h3>
+    <br>
+    <p>Bu yazı wikipwdia dan alıntılanmıştır:</p>
+    <blockquote cite="https://tr.wikipedia.org/wiki/Selamlaşma">    <!--blockquotation alıntı yaptığın metni yazmak içindir. cite attribute ile kaynağıda belirtebilirsin-->
+        Selamlaşma, insanlar arasındaki iletişimin bir parçasıdır. 
+        Selam şekli ve dili ülkeden ülkeye, bölgeden bölgeye farklılık gösterir.
+        Bu hareket veya hareketler samimiyet, barış, dostluk, arkadaşlık, 
+        sevgi ve saygı ifadelerinden bir veya daha fazlasını içerebilir. 
+        "Merhaba", "günaydın", "selâmün aleyküm", "iyi günler", "iyi akşamlar", "iyi geceler" gibi sözcük ve söz grupları 
+        selamlaşmanın Türkçede görülen selamlaşma sözlü kalıplarıdır.
+    </blockquote>    
+    <br><br><br>
+
+    <h3>short quotation q </h3> <!--browsers genellikle <q> tagınada etrafına tırnak koyar. hocam ifadeye dikkat edelim browsers
+                                    genellikle şöyle yapar diyoruz. yani browsers alır ve bizim kodumuzu yorumlar ama nasıl yansıtacağını bilemeyiz :)-->
+    <br>
+    <p>Aşık Veysel'in de dediği gibi <q>Güzelliğin on par' etmez bu bendeki aşk olmasa</q></p> <!--hocam q shor quot olduğu için p nin içine yazılır-->
+    <br><br><br>
+
+    <h3>Abreviation abrr</h3><br> <!--bu abreviation olayıda bir kısaltma yaptığında kullanıcı fareyi götürdüğünde açıkklamayı görebilsin diye 
+                                    bunuda tabiki title sayesinde yapıyoruz. Ayrıca bunun kısaltm aolduğunun belirtmemizde browserınn okuması açısından daha iyi-->
+    <p> Yeni <abbr title="Milli Istihbarat Teşkilati">MIT</abbr> müsteşarı İbrahım KALIN felsefe profesörüdür </p>
+    <br><br><br>
+
+    <h3>Address</h3> <!--address genellikle yazar belki gerçekten adres sosyal  medya hesapları gibi bilgileri yazmak için kullanılır.
+                        browser genellikle italic olarak yazar. 
+                        hocmaburadaki tek mesele italic yazmak değildir. browsera bunun addres tipinde bir bilgio olduğunu da belirtmiş oluruz-->
+    <p>İnce Memed beğendiği nadir romanlardan biridir.</p>
+    <address>
+        yazar: Yaşar Kemal <br>
+        tarih: 1955
+    </address>
+    <br><br><br>
+
+    <h3>Cite</h3><!--element content olarak eser isimi yazılır. yine genellikle italic olarak yazılır-->
+    <p>Türkiyede dahi diziler konun olmuş bir kitaptır <cite>Monte Kristo kontu</cite> Alexsandre DUMAS. </p>
+    <br><br><br>
+
+    <h3>Bi-Directional Override</h3> <!--baya ilging yeniden yazı yönü belirler :)) tatlı-->
+    <p>dayanabilirsen dayan <bdo dir="rtl">ALI CABBAR</bdo></p>
+    <br><br><br>
 </body>
 </html>
