@@ -1,4 +1,8 @@
 h4{
     color:powderblue;
-
+    border:2px solid black;
+    font-family:courier;
+    font-size:160%;
+    padding:30px; /* çerçeve ve içindeki yazının uzaklığı */
+    margin:100px; /* çerçevenin etraftan uzaklığı */
 }
