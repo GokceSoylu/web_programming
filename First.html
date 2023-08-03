@@ -1,9 +1,22 @@
 <!DOCTYPE html> <!--hocam burası adı üstünd edöküman tipini belirliyor-->
 <html lang="en-UK"><!--as you see lang is html tag's atribute. you should write it. lang means language. lang="the firs two latter of the language - first two latter of country"-->
 <head> <!--head dediğimiz kısım yine sayfayla alakalı bilgileri barındırıyor-->
+    
+    <!-- todo External CSS burada  :))-->
+    <link rel="stylesheet" href="css_external.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- !Dikkat Internal CSS burada :)-->
+    <style>
+        h2 {color:darkred;}
+    </style>
+
+
+    
+
     <title>The Page</title><!--burada sayfanınn üzerindeki isim kısmı oluyor so browser title-->
 </head>
 <body"><!--body kısmı sayfa içeriğine yazacağımız kısım it conteins all viisble contents-->
@@ -131,5 +144,20 @@
         direkt color yazarsan bu text color olur
         birde border var onuda artık renk başliğinin altında yazmış bukunduk. border:px tip renk; şeklind eyapabilirsin-->
     <p style="border:2px solid rgb(82, 213, 180); color:rgb(231, 112, 231)">yine sensiz kalbim<br>yine sessiz<br>gün doğdu diyorlar hani neredesin<br>mubarek olsun kandillerin 😂</p>
+    <br><br><br><hr></hr><br>
+
+    <h1>CSS IN HTML</h1> <!--CSS'i html'e eklemenin üç yolu var inline bu yukarıda da yaptığımız gibi style eklemek
+                            diğeri internal head kısmına <style> eklemek. Bir diğeri de link iile css file eklemek -->
+    <p style="color:burlywood;">Inline CSS</p>
+    
+    <h2>Internal CSS için head kısmının içine style tag'ı ekleriz <br>bununn içerisine de isim yazıp {} ekleyerek tıpkı sözlük yapısı gibi<br>
+        özellikleri yazarız. bu isimdeki tüm yapılar için geçerli olur :)
+    </h2>
+    <h4>External CSS bence en havalısıs. Farklı bir css uzantılı dosyada kodu yazıyorsun sonra head kısmına <br>
+        rel=stylesheet desşn ve href ile link eklersin</h4>
+
+    <!--bir iki özellikten bahsedelim burada zaetn color, font-size, font-family, border vaar birde borderın 
+        özellikleri var margin çevreden uzaklığı, padding yazı ve çerçeve arası uzaklık-->
+    
 </body>
 </html>
