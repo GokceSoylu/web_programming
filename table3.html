@@ -1,0 +1,62 @@
+<DOCTYPE HTML>
+    <html lang="en">
+        <header>
+            <style>
+                th, caption, td{
+                    text-align: center;
+                }
+                th,td{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                td:hover, th:hover{
+                    background-color: rgb(142, 233, 245);
+                }
+               
+            </style>
+        </header>
+        <body><!-- rowspan ve cospan ik satırı birden iik kolonu birden kapla demektir.-->
+            <caption >day palanner</caption>
+            <table border="1px solid black">
+                <colgroup>
+                    <col span="1">
+                    <col span="2" style="background-color: rgb(229, 174, 232);">
+                </colgroup>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="2">PZT</th>
+                    <th rowspan="2">SL</th>
+                    <th rowspan="2">CRS</th>
+                </tr>
+                <tr>
+                    <td>norm</td>
+                    <td>tatil</td>
+                </tr>
+                <tr>
+                    <th>09.00</th>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>                
+                    <td>D</td>                
+                </tr>
+                <tr style="background-color: rgb(229, 174, 232);">
+                    <th>12.00</th>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>                
+                    <td>D</td>                
+                </tr>
+                <tr>
+                    <th>16.00</th>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>                
+                    <td>D</td>                
+                </tr>
+            </table>
+        </body>
+    </html>
+    
+</DOCTYPE>
