@@ -7,45 +7,66 @@
     <title>input stuff</title>
 </head>
 <body>
-    <h1>Employment Appplication</h1><br>
+    <h1>Employment Appplication</h1>
+    <button type="button" onclick="alert('Break a leg!')">click</button>
+    <br><br>
     <form action="https://music.youtube.com" target="mahmut" method="post" autocomplete="on"><!-- hocam bu kısım submit için koyduğun linke göderiri formu :))-->
-        <label for="in_text"> NAME </label><br><!--submit hariç her bir input tag inde name koyak zorundasın yoksa formda value yi gönderemez-->
-        <input type="text" id="in_text" name="name"> <!-- GET ve POST farkı. get ile gönderdiğnde değerler url de gözükür postta gözükmez
-                                                            bundan dolayı hocam eğer kişisel öönemli data varsa get kullanma ayrıca get 2048 karektere
-                                                            kadar gönderebilir ancak post un sınırı yok. yaşasın post-->
+        <fieldset>
+            <legend>Appliying Form</legend>
+            <label for="in_text"> NAME </label><br><!--submit hariç her bir input tag inde name koyak zorundasın yoksa formda value yi gönderemez-->
+            <input type="text" id="in_text" name="name"> <!-- GET ve POST farkı. get ile gönderdiğnde değerler url de gözükür postta gözükmez
+                                                                bundan dolayı hocam eğer kişisel öönemli data varsa get kullanma ayrıca get 2048 karektere
+                                                                kadar gönderebilir ancak post un sınırı yok. yaşasın post-->
+            
+                                                                <!--Dikkat edelim iframe'e koyduğun ismi form tag'inda target kısmına yazarsan formu
+                                                                    gönderdiği linki frame'in üzerine açart :)) kısmındaki -->
+            <!--peki ya autocomplete nedir. daha önce girdiğin değere otomatik dolsurması-->
         
-        <!--peki ya autocomplete nedir. daha önce girdiğin değere otomatik dolsurması-->
-    
-        <br>
-        <h3>please choose the languages you know</h3>
-    
+            <br>
+            <h3>please choose the languages you know</h3>
         
-        <input type="checkbox" id="c" name="in_checkbox" value="known_lang_checkbox">
-        <label for="c" >C</label><br>
+            
+            <input type="checkbox" id="c" name="in_checkbox" value="known_lang_checkbox">
+            <label for="c" >C</label><br><!--label element tede anladığın gibi  tags arasına yadığın değer ekranda gözükür ve for kısmına istsediğn 
+                                            input elamanınn id sini yazarsın-->
 
-        <input type="checkbox" id="c++" name="in_checkbox" value="Cknown_lang_checkbox">
-        <label for="c++" >C++</label><br>
+            <input type="checkbox" id="c++" name="in_checkbox" value="Cknown_lang_checkbox">
+            <label for="c++" >C++</label><br>
 
-        <input type="checkbox" id="java" name="in_checkbox" value="known_lang_checkbox">
-        <label for="java" >JAVA</label><br>
+            <input type="checkbox" id="java" name="in_checkbox" value="known_lang_checkbox">
+            <label for="java" >JAVA</label><br>
 
-        <input type="checkbox" id="python" name="in_checkbox" value="known_lang_checkbox">
-        <label for="python">PYTHON</label><br>
+            <input type="checkbox" id="python" name="in_checkbox" value="known_lang_checkbox">
+            <label for="python">PYTHON</label><br>
 
-        <br>
+            <br>
 
-        <h3>Gender</h3>
-    
-        <input type="radio" id="famele" name="gender" value="gender_radio">
-        <label for="famele">Famele</label><br>
+            <h3>Gender</h3>
+        
+            <input type="radio" id="famele" name="gender" value="gender_radio">
+            <label for="famele">Famele</label><br>
 
-        <input type="radio" id="male" name="gender"  value="gender_radio">
-        <label for="male">Male</label><br>
+            <input type="radio" id="male" name="gender"  value="gender_radio">
+            <label for="male">Male</label><br>
+            <br><br>
+            <label for="dep" >Choose your department please</label> <br>
+            <select id="dep" name="deps" size="5" multiple> <!--görünür değerlerin sayısını size ile belirteb,liriz ama kaç yazarasan yaz en az 4 elemen gösterir Multiple yaazarsanda birden çok değer seçebilir:))-->
+                <option value="front_ebd">Front End</option>
+                <option value="back_end">Back End</option>
+                <option value="full_stack" selected>Full Stack</option> <!--Normalde defoult olarak ilkmdeğişken seçilir başka  ir değişkeni selected ile seçebilirisn-->
+                <option value="ai">Artificial Intelligen</option>
+                <option value="data_base">Data Base</option>
+                <option value="siber_security">Siber Security</option>
+            </select><br><br><br>
+            <p>We are exited for your feadback</p>
+            <textarea name="comment" rows="5" cols="40">You can wrtite your comment here</textarea><br><br> <!--hocam style kullanırsanda css'in gücünden yararlanmış 
+                                                                                                                    px olarak width ve height boyutu ayarlaaybilirsin-->
 
-        <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
+        </fieldset>
     </form>
 
 
-    <iframe id="kl" src="First.html" name="mahmut" width="700px" height="500px"></iframe>
+    <iframe id="kl" src="First.html" name="mahmut" width="700px" height="300px"></iframe>
 </body>
 </html>
