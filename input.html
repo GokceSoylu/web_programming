@@ -8,9 +8,13 @@
 </head>
 <body>
     <h1>Employment Appplication</h1><br>
-    <form action="https://music.youtube.com" target="mahmut"><!-- hocam bu kısım submit için koyduğun linke göderiri formu :))-->
+    <form action="https://music.youtube.com" target="mahmut" method="post" autocomplete="on"><!-- hocam bu kısım submit için koyduğun linke göderiri formu :))-->
         <label for="in_text"> NAME </label><br><!--submit hariç her bir input tag inde name koyak zorundasın yoksa formda value yi gönderemez-->
-        <input type="text" id="in_text" name="name">
+        <input type="text" id="in_text" name="name"> <!-- GET ve POST farkı. get ile gönderdiğnde değerler url de gözükür postta gözükmez
+                                                            bundan dolayı hocam eğer kişisel öönemli data varsa get kullanma ayrıca get 2048 karektere
+                                                            kadar gönderebilir ancak post un sınırı yok. yaşasın post-->
+        
+        <!--peki ya autocomplete nedir. daha önce girdiğin değere otomatik dolsurması-->
     
         <br>
         <h3>please choose the languages you know</h3>
