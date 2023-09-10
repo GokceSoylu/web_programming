@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="aothor" content="Necmiye Soylu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(74, 14, 47);
+            }
+        </style>
+    </head>
+    <body>  <!--hocam input type'ın defoult'ı text
+    'tir'-->
+        <form action="first.html">
+            <label for="in_text">Name</label>
+            <input type="text" id="in_text" name="name" ><br><br>
+
+            <label for="in_text2">Surname</label>
+            <input type="text" id="in_text2" name="surname"><br><br>
+
+            <label for="in_email">Email</label>
+            <input type="email" id="in_email" name="email"><br><br>
+
+            <label for="in_radio">Woman</label>
+            <input type="radio" id="in_radio" name="gender" ><br><br>
+
+            <label for="in_radio2">Man</label>
+            <input type="radio" id="in_radio2" name="gender" ><br><br>
+
+            
+            <label for="in_color">Choose your color</label>
+            <input type="color" id="in_color" name="color"><br><br>
+            
+            <p>Do you have?</p>
+            <label for="in_checkbox">car</label>
+            <input type="checkbox" id="in_checkbox" name="you have"><br><br>
+            <label for="in_checkbox2">motorcycle</label>
+            <input type="checkbox" id="in_checkbox2" name="you have"><br><br>
+            <label for="in_checkbox3">bicycle</label>
+            <input type="checkbox" id="in_checkbox3" name="you have"><br><br>
+
+            <label for="in_date">Birthday</label>
+            <input type="date" id="in_date" name="birthday"><br><br>
+
+            <label for="in_datetime_local" >Birthday(again)</label>
+            <input type="datetime-local" id="in_datetime_ocal" name="yükselen"><br><br>
+
+        
+            <input type="button"  onclick="alert('you have just completed the form')" value="click"><br><br>
+            <!--hocam bu kısma dikkat input type=button da isim ve id yazılmaz!-->
+
+            <input type="reset" id="in_reset" name="reset_button" value="reset">
+            <input type="submit" id="in_submit" name="submit_button" value="submit"><br><br>
+
+            <textarea id="text_area" name="comment" style="width: 250px; height: 80px;" >"You can write your mesage here"</textarea>
+        </form>
+
+    </body>
+</html>
