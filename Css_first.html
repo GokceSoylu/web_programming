@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS deneme</title>
+
+    <style>
+    /* hocam çok ilginç ama bu css için yanı style içerisinde geçerli. comment olur*/
+        .Urgent{
+            color:red;
+            font-style: oblique,bold;
+        }
+        .Quotation{
+            color:black;
+            font-style:italic,bold;
+        }
+        body{
+            counter-reset: section ;
+        }
+        h1{
+            color: black;
+            font-style: bold;
+            counter-reset: subsection;
+        }
+        h1::before{ /* bu befıore after munabbeti ne bi bakalım*/
+            counter-increment: section;
+            content: counter(section)". ";
+        }
+        h2::before{
+            counter-increment: subsection;
+            content: counter(section)"."counter(subsection);
+        }
+
+    </style>
+</head>
+<body>
+    <!--Hocam id unique oluypr ve sayfa içerisinde tek bir elementte bukunabiliyor. Ancak class'ın içinde birden fazla element bulunabiilir.
+    bir element birden fazla sınıfa da ait olabilir. Ayrıca sınıfın içindeki tek bir  ti element,de seçebilirsin örneğin. important.p gibi :) ayrıca * ise universal demek yani tüm html elemntleri 
+    için geçerli olur
+    
+    Curly bracket kullanarak özellik belileme kızmına selector deniliyor. Ve tek bir selector ile birden fazla grubu tanımlayabilirisn.-->
+
+
+    <!--HTML kısmında da anlattığımız gibi css eklemenin üç yolu var inline external ve internal. external <linl> tag'ı ile dışarıdan bir .css
+    dosyası eklemek. internal <style>  tags ieçerisine özellikleri yazmak. inline ise direkt elemüntin kendi tag'ı içerisine style attribute eklememk.
+    Ya açıkçası CSS dediğimiz tamamen style. style atribute yada tag olarak kullanarak özellik ekleme güzelleştirme  make up yani :))-->
+
+    <h1>CSS/HTML</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>bootsrap</h2>
+
+    <h1>Script</h1>
+    <h2>Java script</h2>
+    <h2>Jquery</h2>
+    <h2>React</h2>
+
+    <h1>Programming</h1>
+    <h2>Java</h2>
+    <h2>Python</h2>
+    <h2>C++</h2>
+
+</body>
+</html>
