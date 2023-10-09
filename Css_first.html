@@ -17,20 +17,20 @@
             font-style:italic,bold;
         }
         body{
-            counter-reset: section ;
+            counter-reset: c ;/*create or reset a counter*/
         }
         h1{
             color: black;
             font-style: bold;
-            counter-reset: subsection;
+            counter-reset: c2;
         }
         h1::before{ /* bu befıore after munabbeti ne bi bakalım*/
-            counter-increment: section;
-            content: counter(section)". ";
+            counter-increment: c;
+            content: counter(c)". ";
         }
         h2::before{
-            counter-increment: subsection;
-            content: counter(section)"."counter(subsection);
+            counter-increment: c2;
+            content: counter(c)"."counter(c2);
         }
 
     </style>
@@ -48,19 +48,19 @@
     Ya açıkçası CSS dediğimiz tamamen style. style atribute yada tag olarak kullanarak özellik ekleme güzelleştirme  make up yani :))-->
 
     <h1>CSS/HTML</h1>
-    <h2>HTML</h2>
-    <h2>CSS</h2>
-    <h2>bootsrap</h2>
+    <h2> HTML</h2>
+    <h2> CSS</h2>
+    <h2> Bootsrap</h2>
 
     <h1>Script</h1>
-    <h2>Java script</h2>
-    <h2>Jquery</h2>
-    <h2>React</h2>
+    <h2> Java script</h2>
+    <h2> Jquery</h2>
+    <h2> React</h2>
 
     <h1>Programming</h1>
-    <h2>Java</h2>
-    <h2>Python</h2>
-    <h2>C++</h2>
+    <h2> Java</h2>
+    <h2> Python</h2>
+    <h2> C++</h2>
 
 </body>
 </html>
