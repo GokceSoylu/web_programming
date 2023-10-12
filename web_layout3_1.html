@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            background-color: rgb(202, 202, 202);
+        }
+        .head{
+            background-color: white;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .head h1{
+            background-color: white;
+            font-size:350%;
+        }
+        .head p{
+            background-color: white;
+            font-size: larger;
+        }
+        .menu{
+            background-color: rgb(28, 28, 28);
+            margin:5px;
+            margin-top: 0px;
+            padding: 10px;
+        }
+        .menu a{
+            color: antiquewhite;
+            background-color: rgb(28, 28, 28);
+            padding: 10px;
+            display: inline;
+            text-align: left;
+            text-decoration: none;
+            margin-top: 0px;
+        }
+        .menu a:hover{
+            background-color: rgb(136, 133, 133);
+            margin-top: 0px;
+        }
+        .column{
+            float: left;
+            margin: 5px;
+            font-size: larger;
+            background-color: white;
+            padding: 10px;
+        }
+        .column.main{
+            width: 70%;
+
+        }
+        .column.main h1, p{
+            background-color: white;
+        }
+        .column.right{
+            width: 30%;
+        }
+        .row ::after{
+            clear: both;
+        }
+        .footer{
+            background-color: rgb(150, 147, 147);
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 >My Website</h1>
+        <p >Resize the browser window to see the effect</p>
+    </div>
+
+    <div class="menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a> <!--son link sağa dayayamadım-->
+    </div>
+
+    <div class="row">
+        
+        <div class="column main">
+            <h1>TITLE HEADING</h1>
+            <p>Title description</p>
+        </div>
+
+    </div>
+</body>
+</html>
