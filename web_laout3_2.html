@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .head{
+            background-color: white;
+            text-align: center;
+            margin: 5px;
+            padding:30px;
+        }
+        .head h1{
+            background-color: white;
+            font-size: 350%;
+        }
+        .head p{
+            background-color: white;
+            font-size: larger;
+       }
+
+        .menu{
+            background-color: black;
+            margin: 5px;
+            margin-top:0px;
+            padding:15px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: antiquewhite;
+            padding:15px;
+        }
+        .menu a:hover{
+            background-color: rgb(158, 152, 152);
+            color: black;
+            padding:15px;
+        }
+
+        .column_left{
+            width: 75%;
+            float: left;
+        }
+
+        .column_right{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .card{
+            background-color: white;
+            margin-top:10px;
+            padding: 20px;
+        }
+        .card h2,h3,h4,h5,p{
+            background-color: white;
+        }
+
+        .image{
+            background-color: rgb(164, 161, 161);
+            margin: 10px;
+            padding: 3px;
+        }
+
+        .image p{
+            background-color: rgb(164, 161, 161);
+            margin: 10px;
+            text-align: center;
+        }
+
+        .cleaner ::after{
+            clear: both;
+            display: table;
+            content: "";
+        }
+
+        
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        footer{    
+            background-color: rgb(146, 141, 141);
+            text-align: center;
+            padding: 200px;
+            margin-top: 200px;
+
+        }
+
+        .footer h2{
+            background-color: rgb(146, 141, 141);
+            text-align: center;
+            padding: 200px;
+            margin-top: 200px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <div class="menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="cleaner">
+
+        <div class="column_left">
+
+            <div class="card">
+                <h3>TITLE HEADING</h3>
+                <h5>Title description, Oct 12, 2023 </h5>
+                <div class="image" style="height: 200px;"><p>IMAGE</p> </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor <br>
+                    incididunt ut labore et dolore magna aliqua.<br> 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+
+            <div class="card">
+                <h3>TITLE HEADING</h3>
+                <h5>Title description, Oct 13, 2023</h5>
+                <div style="height: 200px;" class="image"><p>IMAGE</p></div>
+                <p>Some text...</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor <br>
+                    incididunt ut labore et dolore magna aliqua.<br> 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+
+        </div>
+
+        <div class="column_right">
+            
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="image" style="height: 150px;"><p>IMAGE</p></div>
+            </div>
+
+            <div class="card">
+                <h2>Popular Posts</h2>
+                <div class="image" style="height: 100px;"><p>IMAGE</p></div>
+                <div class="image" style="height: 100px;"><p>IMAGE</p></div>
+                <div class="image" style="height: 100px;"><p>IMAGE</p></div>
+            </div>
+
+            <div class="card">
+                <h2>Follow  me</h2>
+                <p>Some text...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h2>FOOTER</h2>
+    </div>
+    
+</body>
+</html>
